@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabrizio Barrial | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HEADER Y NAVEGACIÓN FIJA -->
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">Portafolio</a>
+            
+            <!-- Menú responsive para móviles -->
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="image/menu.png" class="menu-icono" alt="Menu">
+            </label>
+            
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#inizio">Inizio</a></li>
+                    <li><a href="#progetti">Progetti</a></li>
+                    <li><a href="#cv">Curriculum Vitae</a></li>
+                    <li><a href="#contatti">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECCIÓN PRINCIPAL (HERO) -->
+    <section class="hero-section container" id="inizio">
+        <img src="avatar.svg" alt="Avatar Fabrizio" class="profile-img">
+        <h1>Mi Presento</h1>
+        <p>Sono Fabrizio Barrial Mendivil, studente di Informatica e Telecomunicazioni.</p>
+        <p>istruzione: iis Galileo Galilei</p>
+        <p>attualmente 4 anno</p>
+        <a href="#progetti" class="btn-1">Vedi i miei progetti</a>
+    </section>
+
+    <!-- SECCIÓN DE PROYECTOS -->
+    <section class="progetti container" id="progetti">
+        <h2>I Miei Progetti</h2>
+        <div class="proyecto-card">
+            <h3>Sistema di Algoritmi e Gestione Dati</h3>
+            <p>Applicazione in C++ per la gestione, ricerca e ordinamento di dati tramite Selection Sort.</p>
+            <a href="https://github.com/CZfabrizio/cpp-selection-sort-demo" target="_blank" class="btn-github">Vedi su GitHub</a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO / CV -->
+    <section class="contatti container" id="contatti">
+        <h2>Contatti e Info</h2>
+        <div class="contacto-info" id="cv">
+            <p><strong>GitHub:</strong> <a href="https://github.com/CZfabrizio?tab=overview&from=2026-08-01&to=2026-08-31" target="_blank">github.com/tu-usuario</a></p>
+            <p><strong>Email:</strong> fabry13men@gmail.com</p>
+        </div>
+    </section>
+
+</body>
+</html>

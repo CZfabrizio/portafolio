@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Fondo circular oscuro -->
+  <circle cx="256" cy="256" r="256" fill="#0d1117" />
+  
+  <!-- Inicial F alineada al centro exacto (X=256, Y=256) -->
+  <text 
+    x="256" 
+    y="256" 
+    text-anchor="middle" 
+    dominant-baseline="central" 
+    fill="#58a6ff" 
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" 
+    font-size="260" 
+    font-weight="bold">F</text>
+</svg>
+

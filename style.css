@@ -1,0 +1,195 @@
+/* --- RESET Y ESTILOS GENERALES --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- BARRA DE NAVEGACIÓN FIJA (SOLO EL MENÚ) --- */
+.header {
+    background-color: #1e293b;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #334155;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    color: #cbd5e1;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #38bdf8;
+}
+
+#menu, .menu-icono {
+    display: none;
+}
+
+/* --- SECCIÓN 1: HERO / PRESENTACIÓN --- */
+.hero-section {
+    padding: 70px 20px 60px 20px;
+    text-align: center;
+    border-bottom: 1px solid #1e293b;
+}
+
+.profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #38bdf8;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.25);
+    object-fit: cover;
+}
+
+.hero-section h1 {
+    font-size: 38px;
+    color: #f8fafc;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 17px;
+    color: #94a3b8;
+    margin-bottom: 25px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: #0284c7;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-1:hover {
+    background-color: #0369a1;
+}
+
+/* --- SECCIÓN 2: PROYECTOS --- */
+.progetti {
+    padding: 60px 20px;
+}
+
+.progetti h2, .contatti h2 {
+    font-size: 26px;
+    color: #38bdf8;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #334155;
+    padding-bottom: 8px;
+}
+
+.proyecto-card {
+    background-color: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+}
+
+.proyecto-card h3 {
+    color: #f8fafc;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.proyecto-card p {
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+.btn-github {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #334155;
+    color: #38bdf8;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.btn-github:hover {
+    background-color: #475569;
+}
+
+/* --- SECCIÓN 3: CONTACTO --- */
+.contatti {
+    padding: 20px 20px 80px 20px;
+}
+
+.contacto-info p {
+    color: #cbd5e1;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.contacto-info a {
+    color: #38bdf8;
+}
+
+/* --- RESPONSIVE PARA MÓVILES --- */
+@media (max-width: 768px) {
+    .menu-icono {
+        display: block;
+        width: 28px;
+        cursor: pointer;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1e293b;
+        display: none;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #menu:checked ~ .navbar {
+        display: block;
+    }
+}
